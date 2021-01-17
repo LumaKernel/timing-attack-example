@@ -43,10 +43,10 @@ const tryWith = (/** @type (s: string) => boolean */ f, /** @type number */ c, /
 
     const sorted = Object.entries(count).sort((a, b) => b[1] - a[1]);
 
-    console.info("1st: %o", {char: sorted[0][0], cnt: sorted[0][1]},);
-    console.info("2nd: %o", {char: sorted[1][0], cnt: sorted[1][1]},);
-    console.info("3nd: %o", {char: sorted[2][0], cnt: sorted[2][1]},);
-    console.info("last: %o", {char: sorted[sorted.length - 1][0], cnt: sorted[sorted.length - 1][1]},);
+    console.info("1st: %o", {char: sorted[0][0], cnt: sorted[0][1]});
+    console.info("2nd: %o", {char: sorted[1][0], cnt: sorted[1][1]});
+    console.info("3rd: %o", {char: sorted[2][0], cnt: sorted[2][1]});
+    console.info("last: %o", {char: sorted[sorted.length - 1][0], cnt: sorted[sorted.length - 1][1]});
     known += sorted[0][0]
 
     if(f(known)) return known;
